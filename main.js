@@ -11,7 +11,7 @@ while (true) {
     //Entrada de datos
     let precioProducto = Number (prompt ("Ingrese el precio del juego a calcular:").replace(",", "."));
     
-    //Verificacíon de los datos ingresados
+    //Verificación de los datos ingresados
     if (!isNaN (precioProducto) && precioProducto != "") {
         
         //Visualización de los datos ingresados y impuestos a aplicar
@@ -26,5 +26,5 @@ while (true) {
         break;
     }else
         //Informe al usuario sobre el error
-        alert ("Ingrese un precio valido");
+        alert ("Ingrese un precio válido");
 }
