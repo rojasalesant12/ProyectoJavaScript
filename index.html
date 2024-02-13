@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <script src="./main.js"></script>
+  <h1 class="titulo">The RED Store</h1>
+
+  <div class="box">
+    <div class="container">
+      <div class="producto">
+        <img src="./assets/BuzoThat70'sShow.jpg" alt="Buzo That 70's Show">
+        <div class="producto-info">
+          <p class="nombre">Buzo That 70's Show</p>
+          <p class="precio">$6000</p>
+          <button class="boton-comprar">Comprar</button>
+          <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="producto">
+        <img src="./assets/BuzoAvengers.jpg" alt="Buzo Avengers">
+        <div class="producto-info">
+          <p class="nombre">Buzo Avengers</p>
+          <p class="precio">$8000</p>
+          <button class="boton-comprar">Comprar</button>
+          <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="producto">
+        <img src="./assets/RemeraSaveTheDrama.jpg" alt="Remera Save The Drama">
+        <div class="producto-info">
+          <p class="nombre">Remera Save The Drama</p>
+          <p class="precio">$3000</p>
+          <button class="boton-comprar">Comprar</button>
+          <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carrito-container">
+    <button id="toggle-cart">🛒</button>
+    <div class="carrito"></div>
+  </div>
+
+<script src="./js/main.js"></script>
+<script src="./js/productos.js"></script>
+<script src="./js/carrito.js"></script>
 </body>
 
 </html>
