@@ -1,0 +1,202 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&display=swap');
+
+body {
+  background-color: rgb(156, 16, 16);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/*CUERPO*/
+.titulo{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.producto {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.producto img {
+  width: 300px;
+}
+
+.producto-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.precio {
+  font-family: "Unica One", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.boton-comprar {
+  font-family: "Unica One", sans-serif;
+  font-size: 20px;
+  padding: 8px 15px;
+  color: #850808;
+  border: solid #850808;
+  cursor: pointer;
+}
+
+.boton-agregar {
+  margin-top: 10px;
+  font-family: "Unica One", sans-serif;
+  font-size: 20px;
+  padding: 8px 15px;
+  color: #850808;
+  border: solid #850808;
+  cursor: pointer;
+}
+
+/*CARRITO*/
+
+.carrito-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#toggle-cart {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.carrito {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  width: max-content; /* Ajusta el ancho del carrito según tus necesidades */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 400px; /* Ajusta la altura máxima del carrito según tus necesidades */
+  overflow-y: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.carrito.mostrar {
+  display: block;
+}
+
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea los elementos en los extremos */
+  margin-bottom: 20px;
+  padding: 20px; /* Aumenta el espacio interno */
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-carrito .miniatura img {
+  width: 110px;
+  border-radius: 5px;
+}
+
+.producto-carrito .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  font-family: "Bebas Neue", sans-serif;
+  padding-left: 20px;
+}
+
+.producto-carrito .info p {
+  margin: 0;
+}
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+}
+
+.cantidad-control button {
+  background-color: #850808;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Unica One", sans-serif;
+}
+
+.cantidad-control button:hover {
+  background-color: #6b0707;
+}
+
+.cantidad {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.comprar {
+  margin-top: 20px;
+  background-color: #850808;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Unica One", sans-serif;
+}
+
+.comprar:hover {
+  background-color: #6b0707;
+}
+
+/* Estilo para el botón "Remover" en el carrito */
+.producto-carrito .info .remover {
+  background-color: #850808;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: "Unica One", sans-serif;
+}
