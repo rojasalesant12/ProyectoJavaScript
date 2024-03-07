@@ -1,16 +1,23 @@
-  // Event listener para agregar un producto al carrito al hacer clic en el botón "Agregar al Carrito"
-  const boxContainer = document.querySelector('.box');
-  boxContainer.addEventListener('click', (event) => {
-      if (event.target.classList.contains('boton-agregar')) {
-          const productoElement = event.target.closest('.producto');
-          const nombreProducto = productoElement.querySelector('.nombre').textContent;
-          const precioProducto = productoElement.querySelector('.precio').textContent;
-          const imagenProducto = productoElement.querySelector('img').src;
-          const producto = {
-              nombre: nombreProducto,
-              precio: precioProducto,
-              imagen: imagenProducto
-          };
-          agregarAlCarrito(producto);
-      }
+export const renderizarProductos = (productos) => {
+  const productosContainers = document.querySelectorAll('.container');
+
+  productos.forEach((producto, index) => {
+    const productoContainer = productosContainers[index];
+
+    if (productoContainer) {
+      const { imagen, nombre, precio } = producto;
+      const imagenElement = productoContainer.querySelector('img');
+      const nombreElement = productoContainer.querySelector('.nombre');
+      const precioElement = productoContainer.querySelector('.precio');
+      const botonComprarElement = productoContainer.querySelector('.boton-comprar');
+      const botonAgregarElement = productoContainer.querySelector('.boton-agregar');
+
+      imagenElement.src = imagen;
+      imagenElement.alt = nombre;
+      nombreElement.textContent = nombre;
+      precioElement.textContent = `$${precio}`;
+      botonComprarElement.textContent = 'Comprar';
+      botonAgregarElement.textContent = 'Agregar al Carrito';
+    }
   });
+};
