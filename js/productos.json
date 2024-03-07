@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Buzo That 70's Show",
+    "precio": 6000,
+    "imagen": "./assets/BuzoThat70'sShow.jpg"
+  },
+  {
+    "nombre": "Buzo Avengers",
+    "precio": 8000,
+    "imagen": "./assets/BuzoAvengers.jpg"
+  },
+  {
+    "nombre": "Remera Save The Drama",
+    "precio": 3000,
+    "imagen": "./assets/RemeraSaveTheDrama.jpg"
+  },
+  {
+    "nombre": "Remera Fine Line",
+    "precio": 4000,
+    "imagen": "./assets/RemeraFineLine.jpg"
+  },
+  {
+    "nombre": "Remera Perdidamente",
+    "precio": 4000,
+    "imagen": "./assets/RemeraPerdidamente.jpg"
+  },
+  {
+    "nombre": "Buzo Daria",
+    "precio": 8000,
+    "imagen": "./assets/BuzoDaria.jpg"
+  }
+]
