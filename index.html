@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto JavaScript</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto JavaScript</title>
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
   <h1 class="titulo">The RED Store</h1>
 
-  <div class="box">
+<div class="box">
     <div class="container">
       <div class="producto">
         <img src="./assets/BuzoThat70'sShow.jpg" alt="Buzo That 70's Show">
         <div class="producto-info">
           <p class="nombre">Buzo That 70's Show</p>
           <p class="precio">$6000</p>
-          <button class="boton-comprar">Comprar</button>
-          <button class="boton-agregar">Agregar al Carrito</button>
-        </div>
-      </div>
-    </div>
-  
-    <div class="container">
-      <div class="producto">
-        <img src="./assets/BuzoAvengers.jpg" alt="Buzo Avengers">
-        <div class="producto-info">
-          <p class="nombre">Buzo Avengers</p>
-          <p class="precio">$8000</p>
-          <button class="boton-comprar">Comprar</button>
-          <button class="boton-agregar">Agregar al Carrito</button>
+          <button class="boton-comprar">COMPRAR</button>
+          <button class="boton-agregar">AGREGAR AL CARRITO</button>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="producto">
-        <img src="./assets/RemeraSaveTheDrama.jpg" alt="Remera Save The Drama">
-        <div class="producto-info">
-          <p class="nombre">Remera Save The Drama</p>
-          <p class="precio">$3000</p>
-          <button class="boton-comprar">Comprar</button>
-          <button class="boton-agregar">Agregar al Carrito</button>
-        </div>
+  <div class="container">
+    <div class="producto">
+      <img src="./assets/BuzoAvengers.jpg" alt="Buzo Avengers">
+      <div class="producto-info">
+        <p class="nombre">Buzo Avengers</p>
+        <p class="precio">$8000</p>
+        <button class="boton-comprar">COMPRAR</button>
+        <button class="boton-agregar">AGREGAR AL CARRITO</button>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="producto">
+      <img src="./assets/RemeraSaveTheDrama.jpg" alt="Remera Save The Drama">
+      <div class="producto-info">
+          <p class="nombre">Remera Save The Drama</p>
+          <p class="precio">$3000</p>
+          <button class="boton-comprar">COMPRAR</button>
+          <button class="boton-agregar">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="container">
+    <div class="producto">
+      <img src="./assets/RemeraFineLine.jpg" alt="Remera Fine Line">
+      <div class="producto-info">
+        <p class="nombre">Remera Fine Line</p>
+        <p class="precio">$4000</p>
+        <button class="boton-comprar">COMPRAR</button>
+        <button class="boton-agregar">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="producto">
+      <img src="./assets/RemeraPerdidamente.jpg" alt="Remera Perdidamente">
+      <div class="producto-info">
+        <p class="nombre">Remera Perdidamente</p>
+        <p class="precio">$4000</p>
+        <button class="boton-comprar">COMPRAR</button>
+        <button class="boton-agregar">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="producto">
+      <img src="./assets/BuzoDaria.jpg" alt="Buzo Daria">
+      <div class="producto-info">
+          <p class="nombre">Buzo Daria</p>
+          <p class="precio">$8000</p>
+          <button class="boton-comprar">COMPRAR</button>
+          <button class="boton-agregar">AGREGAR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="productos"></div>
 
   <div class="carrito-container">
     <button id="toggle-cart">🛒</button>
     <div class="carrito"></div>
   </div>
 
-<script src="./js/main.js"></script>
-<script src="./js/productos.js"></script>
-<script src="./js/carrito.js"></script>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/productos.js"></script>
+  <script type="module" src="./js/carrito.js"></script>
 
+</body>
 </html>
